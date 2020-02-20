@@ -1,4 +1,4 @@
-# denemeapp
+# Vue Js - Blog
 
 ## Project setup
 ```
