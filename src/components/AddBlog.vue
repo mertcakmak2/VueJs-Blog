@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         post:function(){
-            this.$http.post('https://jsonplaceholder.typicode.com/posts',{title:this.blog.title,body:this.blog.content,userId:1}).then(function(data){
+            this.$http.post('https://blog-vue-38a16.firebaseio.com/post.json',this.blog).then(function(data){
                 console.log(data);
                 this.submitted = true
             })
@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 #add-blog{
     margin: 20px auto;
     max-width: 500px;
